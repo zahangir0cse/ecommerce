@@ -5,20 +5,14 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import lombok.Data;
 
-import java.time.LocalDate;
-
 @Entity
 @Data
-public class Sale extends BaseEntity{
-    private LocalDate date;
-    private Integer quantity;
-    private Double totalAmount;
+public class Wishlist extends BaseEntity{
+    @ManyToOne
+    @JoinColumn(name = "customer_id")
+    private Customer customer;
 
     @ManyToOne
     @JoinColumn(name = "item_id")
     private Item item;
-
-    @ManyToOne
-    @JoinColumn(name = "customer_id")
-    private Customer customer;
 }
