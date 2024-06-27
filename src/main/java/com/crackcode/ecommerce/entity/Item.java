@@ -7,4 +7,5 @@ import lombok.Data;
 @Data
 public class Item extends BaseEntity {
     private String name;
+    private Double price;
 }
