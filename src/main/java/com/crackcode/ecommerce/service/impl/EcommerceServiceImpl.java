@@ -4,7 +4,6 @@ import com.crackcode.ecommerce.entity.Customer;
 import com.crackcode.ecommerce.entity.Item;
 import com.crackcode.ecommerce.entity.Wishlist;
 import com.crackcode.ecommerce.repository.CustomerRepository;
-import com.crackcode.ecommerce.repository.ItemRepository;
 import com.crackcode.ecommerce.repository.SaleRepository;
 import com.crackcode.ecommerce.repository.WishlistRepository;
 import com.crackcode.ecommerce.service.EcommerceService;
