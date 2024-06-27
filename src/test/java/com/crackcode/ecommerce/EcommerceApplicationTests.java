@@ -53,7 +53,7 @@ class EcommerceApplicationTests {
     public void testGetMaxSaleDayInRange() {
         LocalDate startDate = LocalDate.now().minusDays(30);
         LocalDate endDate = LocalDate.now();
-        List<Object[]> mockResults = Arrays.asList(new Object[]{LocalDate.now(), 5000.0});
+        List<Object[]> mockResults = Arrays.asList(new Object[][]{new Object[]{LocalDate.now(), 5000.0}});
         when(ecommerceService.getMaxSaleDayInRange(any(LocalDate.class), any(LocalDate.class))).thenReturn(mockResults);
 
         ResponseEntity<List<Object[]>> response = ecommerceController.getMaxSaleDayInRange(startDate, endDate);
